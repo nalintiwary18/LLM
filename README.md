@@ -145,7 +145,7 @@ Variant A
 - Model size (approx): 45M parameters
 - block_size (context): 128
 - batch_size (physical): 64
-- Effective Batch Size (EBS): 64 (no grad accum)
+- Effective Batch Size (EBS): 64
 - learning_rate: 3e-5
 - dropout: 0.2
 
@@ -156,7 +156,7 @@ Variant B
 - n_layer: 18
 - Model size: ~70M parameters
 - block_size: 512
-- batch_size (physical): 16 (or 32 — please confirm exact)
+- batch_size : 16 
 - EBS: 128 (via gradient accumulation)
 - learning_rate: 3e-4
 - dropout: 0.1
@@ -168,7 +168,7 @@ Variant C
 - n_layer: 24
 - Model size: ~95M parameters
 - block_size: 1024
-- batch_size (physical): 32 (confirm exact)
+- batch_size: 32
 - EBS: 256 (via gradient accumulation)
 - learning_rate: 6e-4
 - dropout: 0.1
